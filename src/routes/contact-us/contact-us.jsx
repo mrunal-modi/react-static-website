@@ -1,0 +1,113 @@
+import "./contact-us.scss";
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+
+const form = [
+    {
+        label: "Full Name",
+        type: "text",
+        validation: "required",
+        name: "full_name",
+        placeholder: "Full Name",
+    },
+    {
+        label: "Email",
+        type: "text",
+        validation: "email",
+        name: "email",
+        placeholder: "jhone@example.com"
+    },
+    {
+        label: "Describe your query",
+        type: "textarea",
+        placeholder: "Describe your query (optional)",
+        name: "description"
+    }
+]
+
+const ContactUs = ({ className }) => {
+
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [data, setData] = useState({ full_name: "", email: "", description: "" });
+    const [error, setError] = useState();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(loading) return false;
+        setLoading(true);
+        emailjs.sendForm('service_q6tduh2', 'template_hy1kb6x', e.target, 'yVDMneFSW6uItpdCx')
+            .then((result) => {
+                setSuccess(true);
+                setData({ full_name: "", email: "", description: "" });
+                setLoading(false);
+                console.log(result.text);
+            }, (error) => {
+                setLoading(false);
+                setError(error.text);
+                console.log(error.text);
+            });
+    }
+
+    const validateInput = (e, el) => {
+        if (el.validation.includes("number") && e) {
+            var charCode = (e.which) ? e.which : e.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return e.preventDefault();
+        }
+        return true;
+    }
+
+
+
+    return (
+        <form className={`${className} contact-us-form`} onSubmit={handleSubmit}>
+            {(success) && 
+            <div className="col-12">
+                <div className="alert alert-success ">
+                Contact Successful!
+                </div>
+                </div>}
+
+                {(error) && 
+            <div className="col-12">
+                <div className="alert alert-danger ">
+                {error}
+                </div>
+                </div>}
+
+            {form.map((el, i) =>
+                <label key={i} style={{ width: el.width || "100%", marginBottom: 20, padding: "0 15px" }}>
+                    <span>
+                        {el.label}
+                    </span>
+                    {
+                        el.type === "textarea" ?
+                            <textarea
+                                {...el}
+                                onChange={(e) => setData({ ...data, [el.name]: e.target.value })}
+                                value={data[el.name]}
+                                className="form-control"
+                            /> :
+                            <input
+                                {...el}
+                                onChange={(e) => setData({ ...data, [el.name]: e.target.value })}
+                                value={data[el.name]}
+                                className="form-control"
+                                onKeyDown={e => validateInput(e, el)}
+                            />
+                    }
+                </label>
+            )}
+            <div className="btn-container">
+                <button className="btn btn-danger">
+                    {loading? "Submitting": "Submit"}
+                </button>
+            </div>
+        </form>
+
+    )
+}
+
+export default ContactUs;

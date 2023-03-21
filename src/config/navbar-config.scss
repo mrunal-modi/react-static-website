@@ -1,0 +1,35 @@
+$colours: (
+  // Custom colors
+  // text-color: #fff,
+  // background-color: #2c6bcc,
+
+  // DevStackTutor colors
+  text-color: #000,
+  background-color: #f2f2f2,
+
+  // Bootstap bg-primary
+  // text-color: #fff,
+  // background-color: #007bff,
+
+  // Bootstap bg-dark
+  // text-color: #fff,
+  // background-color: #343a40,
+
+  // Bootstap bg-light
+  // text-color: #343a40,
+  // background-color: #f8f9fa,
+);
+
+@function clr($name) {
+  $color: map-get($colours, $name);
+  @return $color;
+}
+
+@each $color, $value in $colours {
+  .#{$color}Color {
+    color: clr($color)
+  }
+  :root {
+    --#{$color}Color: #{$value}
+  }
+}

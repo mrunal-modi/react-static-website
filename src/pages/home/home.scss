@@ -1,0 +1,68 @@
+@import "../../config/global-config.scss";
+
+// .home-page {
+//     min-height: calc(100vh - 340px);
+//     padding-top: 50px;
+//     display: flex;
+//     .column{
+//         width: 50%;
+//         padding: 0 15px;
+//     }
+//     .title {
+//         width: 100%;
+//         text-align: center;
+//     }
+//     .post-form {
+//         border: solid 1px #bdbdbd;
+//         padding: 20px;
+//         border-radius: 4px;
+//     }
+//     @media (max-width: 767px) {
+//         flex-wrap: wrap;
+//         .column{
+//             width: 100%;
+//             &:first-child{
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     }
+// }
+
+.landing-page{
+    background-color: $base-bg-color;
+    .container{
+        max-width: 1000px;
+    }
+    section{
+        padding: 3em 0;
+        &:first-child{
+            padding-top: 40px;
+        }
+        @media (max-width: 767px) {
+            &:first-child{
+                padding-top: 1em;
+            }
+        }
+        .title{
+            text-align: center;
+            margin-bottom: 3em;
+            h3{
+                font-weight: bold;
+                // font-size: 38px;
+                // text-decoration: underline;
+                // text-underline-offset: 5px;
+                text-transform: uppercase;
+            }
+        }
+        &:nth-child(odd){
+            background-color: #fff;    
+        }
+    }
+    #contact-us{
+        .title{
+            text-align: left;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}
