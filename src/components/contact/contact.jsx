@@ -1,30 +1,12 @@
 import { useMemo } from "react";
 import "./contact.scss";
+import { contactInfo } from "../../config/contact-config";
 
 const Contact = ({ showNames = false }) => {
 
-  const social = useMemo(() => [
-    {
-      label: "@ Email",
-      link: "mailto:mrunal.modi@gmail.com",
-      icon: "envelope"
-    },
-    {
-      label: "Github",
-      link: "https://github.com/mrunal-modi/",
-      icon: "github"
-    },
-    {
-      label: "Facebook",
-      link: "#",
-      icon: "facebook"
-    },
-    {
-      label: "Twitter",
-      link: "#",
-      icon: "twitter"
-    }
-  ], []);
+  const social = useMemo(() => 
+  contactInfo
+  , []);
 
   return (
     <div className="contacts">
