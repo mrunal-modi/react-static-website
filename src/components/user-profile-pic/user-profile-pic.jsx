@@ -1,4 +1,4 @@
-import "./UserProfilePic.scss";
+import "./user-profile-pic.scss";
 
 
 const UserProfilePic = ({

@@ -1,5 +1,5 @@
 import "./our-team.scss";
-import UserProfilePic from "../../components/UserProfilePic/UserProfilePic";
+import UserProfilePic from "../../components/user-profile-pic/user-profile-pic";
 import { teamInfo } from "../../config/our-team-config";
 
 const OurTeam = ({ className }) => {
