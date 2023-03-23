@@ -1,9 +1,6 @@
 import "./our-team.scss";
 import UserProfilePic from "../../components/UserProfilePic/UserProfilePic";
-import {
-    teamInfo
-} from "../../config/our-team-config";
-
+import { teamInfo } from "../../config/our-team-config";
 
 const OurTeam = ({ className }) => {
     return (
@@ -14,7 +11,6 @@ const OurTeam = ({ className }) => {
                     src={el.image}
                     fullName={el.fullName}
                     designation={el.role} />
-
             ))}
         </div>
     )
