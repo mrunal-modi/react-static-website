@@ -7,7 +7,7 @@ export const teamInfo = [
     {
         image: "/images/ImageTeamMember2.jpeg",
         fullName: "Lalit Sharma",
-        role: "Founder | Student"
+        role: "Founder | Tutor"
     },
     {
         image: "/images/logo.png",

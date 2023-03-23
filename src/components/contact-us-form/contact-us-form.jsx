@@ -1,6 +1,7 @@
 import "./contact-us-form.scss";
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { emailJsInfo } from "../../config/emailjs-config";
 
 
 const form = [
@@ -37,7 +38,7 @@ const ContactUsForm = ({ className }) => {
         e.preventDefault();
         if(loading) return false;
         setLoading(true);
-        emailjs.sendForm('service_q6tduh2', 'template_hy1kb6x', e.target, 'yVDMneFSW6uItpdCx')
+        emailjs.sendForm(emailJsInfo.serviceID, emailJsInfo.templateID, e.target, emailJsInfo.publicKey)
             .then((result) => {
                 setSuccess(true);
                 setData({ full_name: "", email: "", description: "" });
