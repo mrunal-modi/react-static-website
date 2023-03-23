@@ -1,11 +1,11 @@
-@import "../../config/banner-config.scss";
+@import "../../config/global-config.scss";
 
 .banner {
     display: flex;
     justify-content: center;
     font-size: 18px;
-    color: $text-color;
-    background: $banner-background;
+    color: clr(text-color);
+    background: clr(banner-background);
 
     &.lft{
         flex-direction: row-reverse;
@@ -71,10 +71,10 @@
         }
 
         .btn {
-            color: #000;
+            color: clr(banner-button-text-color);
+            background: clr(banner-button-background-color);
             border: unset;
             outline: none;
-            background: white;
             border-radius: 100px;
             box-shadow: rgba(0, 0, 0,  0.25) 0px 10px 30px;
             cursor: pointer;

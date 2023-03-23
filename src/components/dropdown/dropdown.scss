@@ -1,4 +1,4 @@
-@import "../../config/navbar-config.scss";
+@import "../../config/global-config.scss";
 
 .dropdown {
   position: relative;
@@ -55,10 +55,9 @@
         color: #000;
 
         &:hover {
-          color: clr(text-color);
+          color: clr(navbar-text-color);
           text-decoration: unset;
-          background: clr(background-color);
-
+          background: clr(navbar-background-color);
         }
       }
     }

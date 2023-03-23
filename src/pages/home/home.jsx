@@ -1,8 +1,8 @@
 import "./home.scss";
 import React from "react";
-import OurTeam from "../../routes/our-team/our-team";
-import ContactUs from "../../routes/contact-us/contact-us";
-import Banner from "../../routes/banner/banner";
+import OurTeam from "../../components/our-team/our-team";
+import ContactUsForm from "../../components/contact-us-form/contact-us-form";
+import Banner from "../../components/banner/banner";
 
 const Home = () => {
     return (
@@ -20,7 +20,7 @@ const Home = () => {
             </section>
             <section id="contact-us">
                 <div className="container">
-                    <ContactUs />
+                    <ContactUsForm />
                 </div>
             </section>
         </div>

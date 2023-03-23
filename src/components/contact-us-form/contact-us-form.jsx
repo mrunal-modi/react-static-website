@@ -1,4 +1,4 @@
-import "./contact-us.scss";
+import "./contact-us-form.scss";
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -26,7 +26,7 @@ const form = [
     }
 ]
 
-const ContactUs = ({ className }) => {
+const ContactUsForm = ({ className }) => {
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
@@ -110,4 +110,4 @@ const ContactUs = ({ className }) => {
     )
 }
 
-export default ContactUs;
+export default ContactUsForm;

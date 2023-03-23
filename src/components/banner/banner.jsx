@@ -1,4 +1,4 @@
-import Link from "../../components/link/link";
+import Link from "../link/link";
 import { title1, title2, description, bannerImage, buttons, isLft } from "../../config/banner-config";
 import "./banner.scss";
 

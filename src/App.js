@@ -1,11 +1,29 @@
-import { BrowserRouter } from "react-router-dom";
 import "./App.scss";
-import Layout from "./routes/layout/layout";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/navbar";
+import Home from "./pages/home/home";
+import Footer from "./components/footer/footer";
+
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Layout />
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>404 Not Found</p>
+              </main>
+            }
+          />
+        </Routes>
+      </main>
+      <Footer/>
     </BrowserRouter>
   );
 };

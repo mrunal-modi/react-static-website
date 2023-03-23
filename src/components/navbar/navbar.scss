@@ -1,10 +1,10 @@
-@import "../../config/navbar-config.scss";
+@import "../../config/global-config.scss";
 
 .Navbar{
     display: flex;
     align-items: center;
-    background-color: clr(background-color);
-    color: clr(text-color);
+    background-color: clr(navbar-background-color);
+    color: clr(navbar-text-color);
     padding: 5px 15px;
     .hamburger-icon{
         display: none;

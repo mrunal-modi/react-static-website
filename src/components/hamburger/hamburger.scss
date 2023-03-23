@@ -1,8 +1,7 @@
-
-@import "../../config/navbar-config.scss";
+@import "../../config/global-config.scss";
 
 .hamburger-icon{
-  border: solid 1px clr(text-color);
+  border: solid 1px clr(navbar-text-color);
   box-shadow: unset;
   outline: unset;
   display: flex;
@@ -26,7 +25,7 @@
    margin-bottom: 5px;
    position: relative;
    
-   background: clr(text-color);
+   background: clr(navbar-text-color);
    border-radius: 3px;
    
    z-index: 1;

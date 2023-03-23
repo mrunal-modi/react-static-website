@@ -1,5 +1,30 @@
-$sidebar-width: 280px;
-$primary-color: rgb(233, 73, 73);
-$default-text-color: #000;
-$highlight-color: #bdbdbd;
-$base-bg-color: #f2f2f2;
+// Global
+$colours: (
+    // Navbar colors
+    // navbar-text-color: #000,
+    // navbar-background-color: #f2f2f2,
+    navbar-text-color: #fff,
+    navbar-background-color: #2c6bcc,
+
+    // Banner colors
+    banner-text-color: #000,
+    banner-background: #fff,
+    banner-button-text-color: #000,
+    banner-button-background-color: #fff,
+);
+
+@function clr($name) {
+    $color: map-get($colours, $name);
+    @return $color;
+}
+
+@each $color,
+$value in $colours {
+    .#{$color}Color {
+        color: clr($color)
+    }
+
+    :root {
+        --#{$color}Color: #{$value}
+    }
+}
