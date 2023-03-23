@@ -1,7 +1,5 @@
 export const logo = "/images/logo.png";
 export const brandName = "MyBrand";
-export const mrunal = "/images/mrunal.png";
-export const lalit = "/images/lalit.png";
 
 export const nav = [
   {

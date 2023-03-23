@@ -1,9 +1,6 @@
 import { useMemo } from "react";
 import "./contact.scss";
 
-
-
-
 const Contact = ({ showNames = false }) => {
 
   const social = useMemo(() => [
