@@ -1,6 +1,6 @@
 export const contactInfo = [
   {
-    label: "@ Email",
+    label: "Email",
     link: "mailto:mrunal.modi@gmail.com",
     icon: "envelope"
   },
