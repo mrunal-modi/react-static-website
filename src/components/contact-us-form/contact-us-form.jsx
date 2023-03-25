@@ -2,7 +2,7 @@ import "./contact-us-form.scss";
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { emailJsInfo } from "../../config/emailjs-config";
-
+import Title from "../title/title";
 
 const form = [
     {
@@ -63,6 +63,9 @@ const ContactUsForm = ({ className }) => {
 
 
     return (
+        <div className="container" id="contact-us">
+<Title title="Contact" />
+        
         <form className={`${className} contact-us-form`} onSubmit={handleSubmit}>
             {(success) && 
             <div className="col-12">
@@ -107,6 +110,8 @@ const ContactUsForm = ({ className }) => {
                 </button>
             </div>
         </form>
+
+        </div>
 
     )
 }

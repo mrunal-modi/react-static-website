@@ -1,4 +1,4 @@
-export const contactInfo = [
+export const socialInfo = [
   {
     label: "Email",
     link: "mailto:mrunal.modi@gmail.com",

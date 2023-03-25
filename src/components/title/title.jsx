@@ -1,14 +1,16 @@
-import React, { useMemo } from "react";
+import React from "react";
 import "./title.scss";
 
 const Title = ({
-  title,  
-  className="",
-  isSubTitle=false,
-  isSectionTitle=false
+  title
 }) => {
-  let t = useMemo(() => (isSectionTitle ? "h2" : isSubTitle ? "h3" :  "h1"), [isSectionTitle, isSubTitle])
-  return React.createElement(t, {className: `title ${className}`}, title);
+  return(
+    <div className="title">
+      <h1>
+        {title}
+      </h1>
+    </div>
+  )
 }
 
 export default Title;

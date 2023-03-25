@@ -4,11 +4,11 @@ export const brandName = "MyBrand";
 export const nav = [
   {
     label: "Our Team",
-    to: "/our-team"
+    href: "#team"
   },
   {
     label: "Contact Us",
-    to: "/contact-us"
+    href: "#contact-us"
   },
   {
     label: "Nav-Header",

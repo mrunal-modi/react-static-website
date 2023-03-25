@@ -1,5 +1,6 @@
-import Contact from "../contact/contact";
+import SocialContact from "../social-contacts/social-contacts";
 import "./footer.scss";
+import {title,description} from "../../config/footer-config";
 
 export default function Footer() {
   return (
@@ -7,18 +8,15 @@ export default function Footer() {
       <section className="main-footer container">
         <div className="mr-auto logo-container">
           <div className="brand-name">
-            DevStack Tutor
+            {title}
           </div>
-          <p>
-          Learn <b>Fullstack Coding</b> using examples, exercises and templates!
-                    So - go ahead, build your new App!
-                    </p>
+          <p>{description}</p>
         </div>
         <div className="social">
           <div className="title">
             Follow Us
           </div>
-          <Contact showNames/>
+          <SocialContact showNames/>
         </div>
       </section>
       <section className="bottom-bar flex justify-center align-center">

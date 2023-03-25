@@ -6,7 +6,9 @@ const Banner = ({
     className = ""
 }) => {
     return (
-        <div className={`${className} banner ${isLft ? "lft" : ""}`}>
+        <div id="banner" className={`${className} banner ${isLft ? "lft" : ""}`}>
+            <div className="container">
+                <div className="banner-content">
             {bannerImage && 
             <div className="left hidden-sm">
             <img src={bannerImage} className="bannerImage" alt="bannerImage" />
@@ -28,6 +30,10 @@ const Banner = ({
                         </Link>
                     ))}
                 </div>
+            </div>
+
+            </div>
+
             </div>
         </div>
     )

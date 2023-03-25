@@ -30,30 +30,18 @@
 
 .landing-page{
     background-color: clr(base-bg-color);
-    .container{
-        max-width: 1000px;
-    }
-    section{
+    
+    & > div{
         padding: 3em 0;
         &:first-child{
-            padding-top: 40px;
+            padding: 0;
         }
         @media (max-width: 767px) {
             &:first-child{
                 padding-top: 1em;
             }
         }
-        .title{
-            text-align: center;
-            margin-bottom: 3em;
-            h3{
-                font-weight: bold;
-                // font-size: 38px;
-                // text-decoration: underline;
-                // text-underline-offset: 5px;
-                text-transform: uppercase;
-            }
-        }
+        
         &:nth-child(odd){
             background-color: #fff;    
         }
