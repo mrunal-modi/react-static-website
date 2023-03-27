@@ -14,12 +14,8 @@ export const nav = [
     label: "Products",
     dropdownItems: [
       {
-        label: "Product1",
-        href: "#/products/product1"
-      },
-      {
-        label: "Product2",
-        href: "#/products/product2"
+        label: "Products",
+        href: "#team"
       }
     ]
   }
