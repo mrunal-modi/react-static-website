@@ -4,8 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
-import NavItem1 from "./pages/nav-item-1/nav-item-1";
-import NavItem2 from "./pages/nav-item-2/nav-item-2";
+import Products from "./pages/products/products";
 
 
 const App = () => {
@@ -15,8 +14,7 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/nav-item-1" element={<NavItem1 />} />
-          <Route path="/nav-item-2" element={<NavItem2 />} />
+          <Route path="/products/:product#" element={<Products />} />
           <Route
             path="*"
             element={
@@ -26,6 +24,7 @@ const App = () => {
             }
           />
         </Routes>
+
       </main>
       <Footer/>
     </BrowserRouter>

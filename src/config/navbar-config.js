@@ -11,15 +11,15 @@ export const nav = [
     href: "#contact-us"
   },
   {
-    label: "Nav-Header",
+    label: "Products",
     dropdownItems: [
       {
-        label: "Nav Item 1",
-        to: "/nav-item-1"
+        label: "Product1",
+        href: "#/products/product1"
       },
       {
-        label: "Nav Item 2",
-        to: "/nav-item-2"
+        label: "Product2",
+        href: "#/products/product2"
       }
     ]
   }
