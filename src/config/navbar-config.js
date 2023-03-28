@@ -11,12 +11,16 @@ export const nav = [
     href: "#contact-us"
   },
   {
-    label: "Products",
-    dropdownItems: [
-      {
-        label: "Products",
-        href: "#team"
-      }
-    ]
-  }
+    label: "About Us",
+    href: "#about-us"
+  },
+  // {
+  //   label: "Products",
+  //   dropdownItems: [
+  //     {
+  //       label: "Topic1",
+  //       href: "#content"
+  //     }
+  //   ]
+  // }
 ];

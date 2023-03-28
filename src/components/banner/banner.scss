@@ -87,15 +87,18 @@
                 user-select: none;
                 white-space: nowrap;
             }
+        }
+
+    
     }
 
     &.lft{
-        flex-direction: row-reverse;
-        .left{
-            justify-content: flex-end;
+        .banner-content{
+            flex-direction: row-reverse;
+            .left{
+                justify-content: flex-end;
+            }
         }
-    }
 
-    
     }
 }

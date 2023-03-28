@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
-import Products from "./pages/products/products";
+// import Products from "./pages/products/products";
 
 
 const App = () => {
@@ -14,7 +14,6 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
           <Route
             path="*"
             element={
