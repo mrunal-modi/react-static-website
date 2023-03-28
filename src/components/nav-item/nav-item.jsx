@@ -15,6 +15,7 @@ const NavItem = () => {
                 label={el.label}
                 dopdownItems={el.dropdownItems}
                 labelClassName="nav-link"
+                // eventType="click"
               />
             ) : (
               <li className="nav-item" key={i}>

@@ -7,7 +7,6 @@ import Banner from "../../components/banner/banner";
 const Home = () => {
     return (
         <div className="landing-page">
-
             <Banner />
             <OurTeam />
             <ContactUsForm />

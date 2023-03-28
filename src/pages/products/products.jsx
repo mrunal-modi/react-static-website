@@ -1,14 +1,13 @@
 import "./products.scss";
 import React from "react";
+import Banner from "../../components/banner/banner";
 
 const Products = () => {
   return (
-    <div id="products" className="products-page">
-      <div className="column">
-      <h2>Products</h2>
-      </div>
+    <div className="landing-page">
+        <Banner />
     </div>
-  );
+);
 };
 
 export default Products;
