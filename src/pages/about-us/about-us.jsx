@@ -1,6 +1,6 @@
 import "./about-us.scss";
-import ContentItem from "../content-item/content-item";
-import Title from "../title/title";
+import ContentItem from "../../components/content-item/content-item";
+// import Title from "../../components/title/title";
 import { aboutUsConfig } from "../../config/about-us-config";
 
 const AboutUs = () => {
@@ -8,7 +8,7 @@ const AboutUs = () => {
 
         <div className="about-us" id="about-us">
             <div className="container">
-                <Title title="About Us" />
+                {/* <Title title="About Us" /> */}
                 <div className="about-us-content">
 
                     {aboutUsConfig.map((el, i) => (

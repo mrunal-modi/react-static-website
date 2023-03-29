@@ -4,15 +4,15 @@ export const brandName = "MyBrand";
 export const nav = [
   {
     label: "Our Team",
-    href: "#team"
+    href: "/#team"
   },
   {
     label: "Contact Us",
-    href: "#contact-us"
+    href: "/#contact-us"
   },
   {
     label: "About Us",
-    href: "#about-us"
+    to: "/about-us"
   },
   // {
   //   label: "Products",
