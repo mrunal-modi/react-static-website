@@ -6,17 +6,16 @@ import { aboutUsConfig } from "../../config/about-us-config";
 const AboutUs = () => {
     return (
 
-        <div className="about-us" id="about-us">
+
             <div className="container">
                 {/* <Title title="About Us" /> */}
                 <div className="about-us-content">
 
                     {aboutUsConfig.map((el, i) => (
-                        <ContentItem img={el.image} description={el.description} isLft={i%2 === 1} key={i} />
+                        <ContentItem img={el.image} description={el.description} title={el.title} isLft={i%2 === 1} key={i} />
                     ))}
                 </div>
             </div>
-        </div>
     )
 }
 

@@ -6,8 +6,13 @@
     color: clr(text-color);
 
     .content-body {
+        padding-top: 30px;
         display: flex;
         justify-content: center;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+        
 
         &>div {
             width: 50%;
@@ -22,7 +27,11 @@
 
         .left {
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
+
+            @media (max-width: 767px) {
+                justify-content: center;
+            }
 
             img {
                 height: 80%;
@@ -33,6 +42,11 @@
         .right {
             flex-flow: column;
             align-items: flex-start;
+            justify-content: flex-start;
+
+            @media (max-width: 767px) {
+                justify-content: center;
+            }
 
             p {
                 margin-top: 20px;
@@ -55,11 +69,15 @@
 
     }
 
-    &.lft{
-        .content-body{
+    &.lft {
+        .content-body {
             flex-direction: row-reverse;
-            .left{
+            .left {
                 justify-content: flex-end;
+
+                @media (max-width: 767px) {
+                    justify-content: center;
+                }
             }
         }
     }

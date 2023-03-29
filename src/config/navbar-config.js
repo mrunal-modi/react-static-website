@@ -19,11 +19,11 @@ export const nav = [
     dropdownItems: [
       {
         label: "Product1",
-        to: "/product-1"
+        to: "/product/product-1" // match this to the keys in productsConfig e.g. product-1
       },
       {
         label: "Product2",
-        to: "/product-2"
+        to: "/product/product-2" // match this to the keys in productsConfig e.g. product-2
       }
     ]
   }
