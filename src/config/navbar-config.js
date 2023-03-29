@@ -14,13 +14,17 @@ export const nav = [
     label: "About Us",
     to: "/about-us"
   },
-  // {
-  //   label: "Products",
-  //   dropdownItems: [
-  //     {
-  //       label: "Topic1",
-  //       href: "#content"
-  //     }
-  //   ]
-  // }
+  {
+    label: "Products",
+    dropdownItems: [
+      {
+        label: "Product1",
+        to: "/product-1"
+      },
+      {
+        label: "Product2",
+        to: "/product-2"
+      }
+    ]
+  }
 ];
