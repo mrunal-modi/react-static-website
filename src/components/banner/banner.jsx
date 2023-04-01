@@ -1,12 +1,12 @@
 import Link from "../link/link";
-import { title1, title2, description, bannerImage, buttons, isLft } from "../../config/banner-config";
+import { bannerTitle1, bannerTitle2, bannerDescription, bannerImage, bannerIsLft, bannerButtons } from "../../config/home-page-config";
 import "./banner.scss";
 
 const Banner = ({
     className = ""
 }) => {
     return (
-        <div id="banner" className={`${className} banner ${isLft ? "lft" : ""}`}>
+        <div id="banner" className={`${className} banner ${bannerIsLft ? "lft" : ""}`}>
             <div className="container">
                 <div className="banner-content">
             {bannerImage && 
@@ -15,16 +15,16 @@ const Banner = ({
             </div>}
             <div className="right">
                 <h3>
-                    {title1}
+                    {bannerTitle1}
                 </h3>
                 <h1>
-                    {title2}
+                    {bannerTitle2}
                 </h1>
                 <p>
-                    {description}
+                    {bannerDescription}
                 </p>
                 <div className="btn-container">
-                    {buttons.map((el, i) => (
+                    {bannerButtons.map((el, i) => (
                         <Link className="btn btn-primary" key={i} {...el}>
                             {el.label}
                         </Link>

@@ -20,8 +20,7 @@ export default function Footer() {
         </div>
       </section>
       <section className="bottom-bar flex justify-center align-center">
-      &copy; Copyright 2023
-      {/* <a href="https://www.devstaktutor.com">www.devstacktutor.com</a> */}
+      &copy; 2023 DevStackTutor.com All Rights Reserved
       </section>
       
     </footer>

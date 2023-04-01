@@ -2,17 +2,17 @@ export const logo = "/images/logo.png";
 export const brandName = "MyBrand";
 
 export const nav = [
-  {
-    label: "Our Team",
-    href: "/#team"
-  },
-  {
-    label: "Contact Us",
-    href: "/#contact-us"
-  },
+  // {
+  //   label: "Our Team",
+  //   href: "/#team"
+  // },
   {
     label: "About Us",
     to: "/about-us"
+  },
+  {
+    label: "Contact Us",
+    href: "/contact-us"
   },
   {
     label: "Products",

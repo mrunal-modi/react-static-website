@@ -1,8 +1,8 @@
 import "./contact-us-form.scss";
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { emailJsInfo } from "../../config/emailjs-config";
-import Title from "../title/title";
+import { emailJsInfo } from "../../config/contact-us-page-config";
+// import Title from "../title/title";
 
 const form = [
     {
@@ -64,7 +64,7 @@ const ContactUsForm = ({ className }) => {
 
     return (
         <div className="container" id="contact-us">
-<Title title="Contact" />
+{/* <Title title="Contact" /> */}
         
         <form className={`${className} contact-us-form`} onSubmit={handleSubmit}>
             {(success) && 
@@ -105,7 +105,7 @@ const ContactUsForm = ({ className }) => {
                 </label>
             )}
             <div className="btn-container">
-                <button className="btn btn-danger">
+                <button className="btn">
                     {loading? "Submitting": "Submit"}
                 </button>
             </div>
