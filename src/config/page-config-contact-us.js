@@ -1,3 +1,4 @@
+// component-config-ContentItem 
 export const contactUsContentConfig = [
     {
         title: "mm",

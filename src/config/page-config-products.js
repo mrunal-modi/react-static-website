@@ -1,3 +1,4 @@
+// component-config-ContentItem 
 export const productsConfig = {
     "product-1": {
         name: "mm",
