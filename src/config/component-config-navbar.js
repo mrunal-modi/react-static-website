@@ -12,18 +12,18 @@ export const nav = [
   },
   {
     label: "Contact Us",
-    href: "/contact-us"
+    to: "/contact-us"
   },
   {
     label: "Products",
     dropdownItems: [
       {
         label: "Product1",
-        to: "/product/product-1" // match this to the keys in productsConfig e.g. product-1
+        to: "/products/product-1" // match this to the keys in productsConfig e.g. product-1
       },
       {
         label: "Product2",
-        to: "/product/product-2" // match this to the keys in productsConfig e.g. product-2
+        to: "/products/product-2" // match this to the keys in productsConfig e.g. product-2
       }
     ]
   }
