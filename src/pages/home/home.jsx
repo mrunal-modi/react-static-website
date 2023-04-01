@@ -3,7 +3,7 @@ import React from "react";
 import Banner from "../../components/banner/banner";
 // import OurTeam from "../../components/our-team/our-team";
 import ContentItem from "../../components/content-item/content-item";
-import { homeContentConfig } from "../../config/home-page-config";
+import { homeContentConfig } from "../../config/page-config-home";
 
 const Home = () => {
     return (

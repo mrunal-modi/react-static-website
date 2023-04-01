@@ -2,7 +2,7 @@ import "./product.scss";
 import ContentItem from "../../components/content-item/content-item";
 // import Title from "../../components/title/title";
 import { useParams } from 'react-router-dom';
-import { productsConfig } from "../../config/product-pages-config";
+import { productsConfig } from "../../config/page-config-products";
 import { useMemo } from "react";
 
 const Product = () => {

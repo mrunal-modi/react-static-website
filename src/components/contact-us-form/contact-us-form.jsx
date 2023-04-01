@@ -1,7 +1,7 @@
 import "./contact-us-form.scss";
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { emailJsInfo } from "../../config/contact-us-page-config";
+import { emailJsInfo } from "../../config/page-config-contact-us";
 // import Title from "../title/title";
 
 const form = [

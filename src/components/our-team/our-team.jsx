@@ -1,6 +1,6 @@
 import "./our-team.scss";
 import UserProfilePic from "../../components/user-profile-pic/user-profile-pic";
-import { teamInfo } from "../../config/about-us-page-config";
+import { teamInfo } from "../../config/page-config-about-us";
 import Title from "../title/title";
 
 const OurTeam = ({ className }) => {

@@ -1,6 +1,6 @@
 import SocialContact from "../social-contacts/social-contacts";
 import "./footer.scss";
-import {title,description} from "../../config/footer-config";
+import {title,description} from "../../config/component-config-footer";
 
 export default function Footer() {
   return (

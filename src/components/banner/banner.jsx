@@ -1,5 +1,5 @@
 import Link from "../link/link";
-import { bannerTitle1, bannerTitle2, bannerDescription, bannerImage, bannerIsLft, bannerButtons } from "../../config/home-page-config";
+import { bannerTitle1, bannerTitle2, bannerDescription, bannerImage, bannerIsLft, bannerButtons } from "../../config/page-config-home";
 import "./banner.scss";
 
 const Banner = ({

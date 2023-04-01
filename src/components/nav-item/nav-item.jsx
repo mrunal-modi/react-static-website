@@ -1,6 +1,6 @@
 import "./nav-item.scss";
 import Dropdown from "../dropdown/dropdown";
-import { nav } from "../../config/navbar-config";
+import { nav } from "../../config/component-config-navbar";
 import { Fragment } from "react";
 import Link from "../link/link";
 const NavItem = () => {
