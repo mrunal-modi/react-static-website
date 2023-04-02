@@ -10,7 +10,7 @@ export const contactUsContentConfig = [
 // component-config-contact-us-form
 export const emailJsInfo = 
   {
-    serviceID: "service_q6tduh2",
-    templateID: "template_hy1kb6x",
-    publicKey: "yVDMneFSW6uItpdCx"
+    serviceID: "",
+    templateID: "",
+    publicKey: ""
   }
