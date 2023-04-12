@@ -1,6 +1,6 @@
 import "./contact-us.scss";
 import React from "react";
-import ContactUsForm from "../../components/contact-us-form/contact-us-form";
+import ContactUsForm from "../../components/contactUsForm/contactUsForm";
 // import ContentItem from "../../components/content-item/content-item";
 // import {contactUsContentConfig} from "../../config/contact-us-page-config";
 

@@ -1,5 +1,5 @@
 
-import "./social-contacts.scss";
+import "./socialContacts.scss";
 import { socialInfo } from "../../config/component-config-footer";
 
 const SocialContact = ({ showNames = false }) => {

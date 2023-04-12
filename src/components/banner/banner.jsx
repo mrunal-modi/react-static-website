@@ -1,38 +1,77 @@
 import Link from "../link/link";
-import { bannerTitle1, bannerTitle2, bannerDescription, bannerImage, bannerIsLft, bannerButtons } from "../../config/page-config-home";
 import "./banner.scss";
 
 const Banner = ({
-    className = ""
+    id="",
+    className = "",
+    img = "",
+    suptitle = "",
+    title = "",
+    subtitle = "",
+    text = "",
+    actionButtons = [],
+    rtl,
+    bgColor="",
+    textColor="",
+    imageHeight="100%",
+    height="",
+    setImageAsBackground=false
 }) => {
     return (
-        <div id="banner" className={`${className} banner ${bannerIsLft ? "lft" : ""}`}>
+        <div 
+            id={id} 
+            className={`${className} banner ${rtl ? "rtl" : "ltr"} ${setImageAsBackground ? "bg-img" : ""}`}
+            style={{
+                backgroundColor: bgColor,
+                color: textColor,
+                height: height
+            }}
+        >
             <div className="container">
                 <div className="banner-content">
-            {bannerImage && 
-            <div className="left hidden-sm">
-            <img src={bannerImage} className="bannerImage" alt="bannerImage" />
-            </div>}
-            <div className="right">
-                <h3>
-                    {bannerTitle1}
-                </h3>
-                <h1>
-                    {bannerTitle2}
-                </h1>
-                <p>
-                    {bannerDescription}
-                </p>
-                <div className="btn-container">
-                    {bannerButtons.map((el, i) => (
-                        <Link className="btn btn-primary" key={i} {...el}>
-                            {el.label}
-                        </Link>
-                    ))}
-                </div>
-            </div>
+                    {img &&
+                        <div className={`left ${setImageAsBackground ? "bg-left" : "hidden-sm"}`}>
+                            <img 
+                                src={img} 
+                                className="bannerImage" 
+                                alt="bannerImage" 
+                                height={imageHeight}
+                            />
+                        </div>
+                    }
+                    <div className="right">
+                        {suptitle &&
+                            <h3>
+                                {suptitle}
+                            </h3>
+                        }
+                        {title &&
+                            <h1>
+                                {title}
+                            </h1>
+                        }
+                        {subtitle &&
+                            <h3>
+                                {subtitle}
+                            </h3>
+                        }
+                        {text &&
+                            <p>
+                                {text}
+                            </p>
+                        }
+                        {actionButtons &&
+                            <div className="btn-container">
+                                {actionButtons.map((el, i) => (
+                                    <Link className="btn btn-primary" key={i} {...el}>
+                                        {el.label}
+                                    </Link>
+                                ))}
+                            </div>
+                        }
+                    </div>
 
-            </div>
+                </div>
 
             </div>
         </div>

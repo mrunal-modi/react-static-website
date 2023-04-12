@@ -2,7 +2,7 @@ import "./home.scss";
 import React from "react";
 import Banner from "../../components/banner/banner";
 // import OurTeam from "../../components/our-team/our-team";
-import ContentItem from "../../components/content-item/content-item";
+import ContentItem from "../../components/contentItem/contentItem";
 import { homeContentConfig } from "../../config/page-config-home";
 
 const Home = () => {

@@ -1,5 +1,5 @@
 import "./product.scss";
-import ContentItem from "../../components/content-item/content-item";
+import ContentItem from "../../components/contentItem/contentItem";
 // import Title from "../../components/title/title";
 import { useParams } from 'react-router-dom';
 import { productsConfig } from "../../config/page-config-products";

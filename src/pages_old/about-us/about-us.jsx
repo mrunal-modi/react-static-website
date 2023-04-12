@@ -1,7 +1,7 @@
 import "./about-us.scss";
-import ContentItem from "../../components/content-item/content-item";
+import ContentItem from "../../components/contentItem/contentItem";
 // import Title from "../../components/title/title";
-import OurTeam from "../../components/our-team/our-team";
+import OurTeam from "../../components/team/ourTeam";
 import { aboutUsConfig } from "../../config/page-config-about-us";
 
 const AboutUs = () => {

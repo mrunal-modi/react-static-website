@@ -1,4 +1,4 @@
-import "./contact-us-form.scss";
+import "./contactUsForm.scss";
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { emailJsInfo } from "../../config/page-config-contact-us";

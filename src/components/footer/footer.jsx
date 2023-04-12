@@ -1,4 +1,4 @@
-import SocialContact from "../social-contacts/social-contacts";
+import SocialContact from "../socialContacts/socialContacts";
 import "./footer.scss";
 import {title,description} from "../../config/component-config-footer";
 
