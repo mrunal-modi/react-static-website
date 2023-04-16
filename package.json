@@ -5,11 +5,16 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "emailjs": "^4.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.58.3"
+    "react-select": "^5.7.2",
+    "react-switch": "^7.0.0",
+    "sass": "^1.58.3",
+    "strformat": "^0.0.7"
   },
   "scripts": {
     "start": "react-app-rewired start",

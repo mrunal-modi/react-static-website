@@ -10,6 +10,7 @@ import UserProfilePic from "../components/userProfilePic/userProfilePic";
 
 import * as viewConfig from "../pages";
 import { useLocation } from "react-router-dom";
+import HeroContent from "../components/heroContent/heroContent";
 
 const PageManager = () => {
 
@@ -23,7 +24,8 @@ const PageManager = () => {
         "ContactUsForm": ContactUsForm,
         "ContentItem": ContentItem,
         "Team": Team,
-        "Social": SocialContact
+        "Social": SocialContact,
+        "HeroContent": HeroContent
     }), []);
 
     useEffect(() => {
