@@ -22,11 +22,8 @@ const PageManager = () => {
         "Banner": Banner,
         "ContactUsForm": ContactUsForm,
         "ContentItem": ContentItem,
-        "Dropdown": Dropdown,
-        "Logo": Logo,
         "Team": Team,
-        "Social": SocialContact,
-        "User": UserProfilePic
+        "Social": SocialContact
     }), []);
 
     useEffect(() => {
