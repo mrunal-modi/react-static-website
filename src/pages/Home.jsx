@@ -81,6 +81,33 @@ const Home = {
             ],
             "bgColor": "#ffc300",
             "textColor": "#fff"
+        },
+        "contact-us": {
+            "component": "Form",
+            "title": "Contact Us",
+            "inputs": [
+                {
+                    "label": "Full Name",
+                    "type": "text",
+                    "validation": "required",
+                    "name": "full_name",
+                    "placeholder": "Full Name",
+                },
+                {
+                    "label": "Email",
+                    "type": "text",
+                    "validation": "email",
+                    "name": "email",
+                    "placeholder": "jhone@example.com"
+                },
+                {
+                    "label": "Describe your query",
+                    "type": "textarea",
+                    "placeholder": "Describe your query (optional)",
+                    "name": "description"
+                }
+            ]
+            //title="Contact us"
         }
     }
 };

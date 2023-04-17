@@ -20,7 +20,7 @@ const Banner = ({
     return (
         <div 
             id={id} 
-            className={`${className} banner ${rtl ? "rtl" : "ltr"} ${setImageAsBackground ? "bg-img" : ""}`}
+            className={`${className} banner section ${rtl ? "rtl" : "ltr"} ${setImageAsBackground ? "bg-img" : ""}`}
             style={{
                 backgroundColor: bgColor,
                 color: textColor,

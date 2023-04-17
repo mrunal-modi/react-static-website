@@ -19,7 +19,6 @@ body {
   width: 100%;
 }
 
-
 .ml-auto{
   margin-left: auto;
 }
@@ -73,6 +72,10 @@ body {
 label{
   width: 100%;
   display: block;
+}
+
+.section{
+  padding: 5% 0px;
 }
 
 @media (max-width: 767px) {

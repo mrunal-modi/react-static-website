@@ -14,7 +14,7 @@ const Team = ({
     return (
 
         <div 
-            className="team" 
+            className="team section" 
             id={id}
             style={{
                 backgroundColor: bgColor,

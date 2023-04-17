@@ -1,3 +1,5 @@
+import strformat from "strformat";
+
 export const validate = (value, validation, name) => {
     let error = "";
     const validators = {

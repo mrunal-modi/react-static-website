@@ -10,18 +10,21 @@ What is Done?
 1. Banner
 2. Our Team 
 3. Content Item
-
+4. HeroItem
 
 What Needs to be done?
 
-1. HeroItem
-2. FormComponent
+1. FormComponent
     Form Component will render forms any form, we need to find a way to identify way to use the form data as well.
-3. ContactUsForm
-    Contact Us form will byh default send a email using email js
-4. Cards Component
-5. Carousal Component
-6. Testimonials
-7. Footer and header configuration
-8. sidebar configuration
-9. theming 
+    ### styling is pending
+
+    
+2. ContactUsForm
+    Contact Us form will byh default send a email using email js    
+3. Cards Component
+4. Carousal Component
+5. Testimonials
+6. Footer and header configuration
+7. sidebar configuration
+8. theming 
+9. Consistent common styling like padding and margin

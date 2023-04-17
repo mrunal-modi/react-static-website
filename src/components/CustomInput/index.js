@@ -1,15 +1,12 @@
 import React, { Component, createRef } from 'react'
 import moment from "moment";
 import RcSelect from 'react-select';
-// import AsyncSelect from 'react-select/async';
 import makeAnimated from 'react-select/animated';
 import CreatableSelect from 'react-select/creatable';
 
 import { 
     validate, 
-    // addClass, 
-    // removeClass 
-} from "../Helpers";
+} from "../../utils/helpers";
 import Axios from "axios";
 import axios from "../../utils/axios";
 import Switch from "react-switch";
