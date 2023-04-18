@@ -44,9 +44,18 @@ const Home = {
             "description": "Enim in fugiat reprehenderit incididunt est sunt tempor deserunt excepteur quis consequat nulla nostrud ex. In duis eiusmod do quis est in sit commodo consequat eu aliqua duis deserunt. Exercitation dolor mollit amet in sint do mollit magna. Lorem sunt sint aute incididunt aute. Ut consectetur non ipsum velit eu. Proident tempor esse voluptate consequat aliquip mollit. Aliquip labore consequat amet dolore minim reprehenderit amet tempor dolor incididunt nisi labore qui.",
             "title": "MM",
         },
+
+        "info-cards": {
+            "component": "InfoCards",
+            "cardInfo": [
+                {},
+                {},
+            ]
+        },
+
         "our-team": {
             "component": "Team",
-            "title": "Our team",
+            "sectionTitle": "Our team",
             "teamInfo": [
                 {
                     "image": "/images/ImageTeamMember1.jpeg",
@@ -84,7 +93,7 @@ const Home = {
         },
         "contact-us": {
             "component": "Form",
-            "title": "Contact Us",
+            "sectionTitle": "Contact Us",
             "inputs": [
                 {
                     "label": "Full Name",
@@ -96,10 +105,9 @@ const Home = {
                 },
                 {
                     "label": "Phone",
-                    "type": "text",
-                    "validation": "email",
-                    "name": "email",
-                    "placeholder": "jhone@example.com",
+                    "type": "number",
+                    "name": "phone",
+                    "placeholder": "Eg. 888 888 8888",
                     "width": "50%"
                 },
                 {

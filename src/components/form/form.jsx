@@ -4,22 +4,15 @@ import { sendEmail } from "../../utils/mailer";
 import Spinner from "../spinner/spinner";
 import { useNotification } from "../../hooks/NotificationContext";
 import { validate } from "../../utils/helpers";
-import Title from "../title/title";
 import "./form.scss";
 
 
 const Form = ({
-    id,
-    className,
     inputs,
     method = "post",
     emailTemplateId = "",
     submitButtonLabel = "Submit",
-    bgColor,
-    textColor,
-    title = "",
-    submitButtonStyle="primary",
-    inputBgColor=""
+    submitButtonStyle = "primary",
 }) => {
 
     const [state, setState] = useState({});
@@ -85,39 +78,25 @@ const Form = ({
     }, []);
 
     return (
-        <div
-            className="form-container section titled-section"
-            id={id}
-            style={{
-                backgroundColor: bgColor,
-                color: textColor
-            }}
-        >
-            <div className="container">
-                {title &&
-                    <Title title={title} />
-                }
-                <form onSubmit={handleSubmit} className={className}>
-                    {inputs?.map((el, i) =>
-                        <label key={i} style={{width: el.width || ""}}>
-                            <span>
-                                {el.label}
-                            </span>
-                            <CustomInput
-                                {...el}
-                                value={state[el.name] || ""}
-                                onChange={handleChange}
-                            />
-                        </label>
-                    )}
-                    <div className="btn-container">
-                        <button className={`btn btn-${submitButtonStyle}`}>
-                            {loading ? <Spinner size={1} /> : submitButtonLabel}
-                        </button>
-                    </div>
-                </form>
+        <form className='form' onSubmit={handleSubmit}>
+            {inputs?.map((el, i) =>
+                <label key={i} style={{ width: el.width || "" }}>
+                    <span>
+                        {el.label}
+                    </span>
+                    <CustomInput
+                        {...el}
+                        value={state[el.name] || ""}
+                        onChange={handleChange}
+                    />
+                </label>
+            )}
+            <div className="btn-container">
+                <button className={`btn btn-${submitButtonStyle}`}>
+                    {loading ? <Spinner size={1} /> : submitButtonLabel}
+                </button>
             </div>
-        </div>
+        </form>
     )
 }
 

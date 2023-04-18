@@ -1,17 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
 import Banner from "../components/banner/banner";
-import ContactUsForm from "../components/contactUsForm/contactUsForm";
 import ContentItem from "../components/contentItem/contentItem";
-import Dropdown from "../components/dropdown/dropdown";
-import Logo from "../components/logo/logo";
 import Team from "../components/team/team";
 import SocialContact from "../components/socialContacts/socialContacts";
-import UserProfilePic from "../components/userProfilePic/userProfilePic";
 
 import * as viewConfig from "../pages";
 import { useLocation } from "react-router-dom";
 import HeroContent from "../components/heroContent/heroContent";
 import Form from "../components/form/form";
+import Section from "../components/section/section";
+import InfoCards from "../components/infoCards/infoCards";
 
 const PageManager = () => {
 
@@ -22,12 +20,12 @@ const PageManager = () => {
 
     const Components = useMemo(() => ({
         "Banner": Banner,
-        "ContactUsForm": ContactUsForm,
         "ContentItem": ContentItem,
         "Team": Team,
         "Social": SocialContact,
         "HeroContent": HeroContent,
-        "Form": Form
+        "Form": Form,
+        "InfoCards": InfoCards
     }), []);
 
     useEffect(() => {
@@ -48,14 +46,24 @@ const PageManager = () => {
             }
             {(mounted && view) && Object.keys(view).map((id, i) => {
                 let Component = Components[view[id]["component"]];
-                if(!Component) return null;
-                return <Component
-                    key={i}
-                    {...view[id]}
-                    id={id.toLowerCase()}
-                >
-                    {view[id].children}
-                </Component>
+                if (!Component) return null;
+                return (
+                    <Section
+                        className={view[id].className}
+                        title={view[id].sectionTitle}
+                        id={view[id].id}
+                        bgColor={view[id].bgColor}
+                        textColor={view[id].textColor}
+                        bgImage={view[id].bgImage}
+                    >
+                        <Component
+                            key={i}
+                            {...view[id]}
+                        >
+                            {view[id].children}
+                        </Component>
+                    </Section>
+                )
             })}
         </div>
     )
