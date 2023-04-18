@@ -76,6 +76,9 @@ label{
 
 .section{
   padding: 5% 0px;
+  &.titled-section{
+    padding: 3% 0px;
+  }
 }
 
 @media (max-width: 767px) {

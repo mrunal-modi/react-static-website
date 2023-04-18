@@ -5,6 +5,7 @@ import Spinner from "../spinner/spinner";
 import { useNotification } from "../../hooks/NotificationContext";
 import { validate } from "../../utils/helpers";
 import Title from "../title/title";
+import "./form.scss";
 
 
 const Form = ({
@@ -16,7 +17,9 @@ const Form = ({
     submitButtonLabel = "Submit",
     bgColor,
     textColor,
-    title = ""
+    title = "",
+    submitButtonStyle="primary",
+    inputBgColor=""
 }) => {
 
     const [state, setState] = useState({});
@@ -83,7 +86,7 @@ const Form = ({
 
     return (
         <div
-            className="form"
+            className="form-container section titled-section"
             id={id}
             style={{
                 backgroundColor: bgColor,
@@ -96,7 +99,7 @@ const Form = ({
                 }
                 <form onSubmit={handleSubmit} className={className}>
                     {inputs?.map((el, i) =>
-                        <label key={i}>
+                        <label key={i} style={{width: el.width || ""}}>
                             <span>
                                 {el.label}
                             </span>
@@ -108,7 +111,7 @@ const Form = ({
                         </label>
                     )}
                     <div className="btn-container">
-                        <button className="btn">
+                        <button className={`btn btn-${submitButtonStyle}`}>
                             {loading ? <Spinner size={1} /> : submitButtonLabel}
                         </button>
                     </div>

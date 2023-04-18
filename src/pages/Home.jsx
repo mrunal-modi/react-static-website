@@ -92,13 +92,22 @@ const Home = {
                     "validation": "required",
                     "name": "full_name",
                     "placeholder": "Full Name",
+                    "width": "50%"
+                },
+                {
+                    "label": "Phone",
+                    "type": "text",
+                    "validation": "email",
+                    "name": "email",
+                    "placeholder": "jhone@example.com",
+                    "width": "50%"
                 },
                 {
                     "label": "Email",
                     "type": "text",
                     "validation": "email",
                     "name": "email",
-                    "placeholder": "jhone@example.com"
+                    "placeholder": "jhone@example.com",
                 },
                 {
                     "label": "Describe your query",
@@ -106,7 +115,10 @@ const Home = {
                     "placeholder": "Describe your query (optional)",
                     "name": "description"
                 }
-            ]
+            ],
+            // "bgColor": "#ffc300",
+            // "textColor": "#fff",
+            // "submitButtonStyle": "primary", //primary, warning, info, danger
             //title="Contact us"
         }
     }

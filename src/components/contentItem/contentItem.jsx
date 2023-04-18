@@ -36,7 +36,7 @@ const ContentItem = ({
     return (
         <div
             id={id}
-            className={`${className} content ${rtl ? "lft" : ""}`}
+            className={`${className} content section ${rtl ? "lft" : ""}`}
             style={styles.container}
         >
             <div className="container">
