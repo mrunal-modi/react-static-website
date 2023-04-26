@@ -1,0 +1,40 @@
+.info-cards-container{
+    // display: flex;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto;
+    .info-cards{
+        // margin: 15px;
+        padding: 0px;
+        min-width: 300px;
+        width: auto;
+        .content{
+            .content-body{
+                padding: 20px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                & > div{
+                    width: 100%;
+                }
+                .left {
+                    margin: -20px -20px 20px;
+                    width: calc(100% + 40px);
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    overflow: hidden;
+                    img{
+                        max-width: 100% !important;
+                    }
+                }
+                .right{
+                    p{
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

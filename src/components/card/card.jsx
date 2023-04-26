@@ -3,10 +3,15 @@
 import "./card.scss";
 
 const Card = ({
-    children
+    children,
+    className="",
+    style={}
 }) => {
     return (
-        <div className="card">
+        <div 
+            className={`card ${className}`}
+            style={style}
+        >
             {children}
         </div>
     )

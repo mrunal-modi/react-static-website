@@ -13,11 +13,11 @@ What is Done?
 4. HeroItem
 5. FormComponent
     Form Component will render forms any form, we need to find a way to identify way to use the form data as well.
+6. Cards Component
 
 What Needs to be done?
 
-1. Cards Component
-2. Carousal Component
+7. Carousal Component
 3. Testimonials
 4. Footer and header configuration
 5. sidebar configuration

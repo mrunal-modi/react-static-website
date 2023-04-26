@@ -1,5 +1,6 @@
 import Title from "../title/title"
 import { useMemo } from "react";
+import "./section.scss";
 
 const Section = ({
     children,
