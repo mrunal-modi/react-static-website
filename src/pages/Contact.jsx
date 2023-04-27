@@ -2,7 +2,7 @@
 const Contact = {
     "path": "/contact",
     "navbarLinkLabel": "Contact",
-    "order": 4,
+    "order": 5,
     "data": {},
     "view": {
         "contact-us": {

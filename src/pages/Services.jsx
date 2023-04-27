@@ -2,7 +2,7 @@
 const Services = {
     "path": "/services",
     "navbarLinkLabel": "Services",
-    "order": 3,
+    "order": 4,
     "data": {},
     "view": {
         "info-cards": {
