@@ -1,15 +1,18 @@
 import "./hamburger.scss";
 
-const Hamburger = ({ isOpen, setOpen }) => {
+const Hamburger = ({ isOpen, setOpen, color="#000" }) => {
+
+  const Span = () => <span style={{backgroundColor: color}} />
+
   return (
-    <button
+    <div
       className={`hamburger-icon ${isOpen ? "open" : "close"}`}
       onClick={() => setOpen(!isOpen)}
     >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <Span />
+      <Span />
+      <Span />
+    </div>
   );
 };
 

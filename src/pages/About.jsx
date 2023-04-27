@@ -1,8 +1,8 @@
 
 const Home = {
-    "path": "/",
-    "navbarLinkLabel": "Home",
-    "order": 1,
+    "path": "/about",
+    "navbarLinkLabel": "About",
+    "order": 2,
     "data": {},
     "view": {
         "page-banner": {
