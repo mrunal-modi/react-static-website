@@ -1,2 +1,4 @@
 export Home from "./Home";
-export About from "./About";
+export Team from "./Team";
+export Contact from "./Contact";
+export Services from "./Services";
