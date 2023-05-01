@@ -1,6 +1,5 @@
 import "./nav-item.scss";
 import Dropdown from "../dropdown/dropdown";
-import config from "../../config/topbar.config";
 import { Fragment, useMemo } from "react";
 import Link from "../link/link";
 import * as pages from "../../pages";

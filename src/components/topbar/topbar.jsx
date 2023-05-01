@@ -12,9 +12,9 @@ const Topbar = ({
   bgColor="#fff",
   textColor="#000",
   borderColor="#bdbdbd",
-  height=80
+  height=80,
+  toggleSidebar=()=>{}
 }) => {
-  const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
   const _header = useRef();
   const style = useMemo(() => {
     let s = {
@@ -65,6 +65,7 @@ const Topbar = ({
 
   }, [position, _header]);
 
+
   return (
     <header 
       className={`topbar`}
@@ -90,8 +91,7 @@ const Topbar = ({
       </div>
 
       <Hamburger 
-        isOpen={burgerMenuOpen} 
-        setOpen={setBurgerMenuOpen} 
+        setOpen={toggleSidebar} 
         color={textColor}
       />
     </header>

@@ -39,19 +39,19 @@
     margin-bottom: 0;
   }
 
-  &.open {
-    span {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
-    }
+  // &.open {
+  //   span {
+  //     opacity: 1;
+  //     transform: rotate(45deg) translate(-2px, -1px);
+  //   }
     
-    span:nth-last-child(2) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-    }
+  //   span:nth-last-child(2) {
+  //     opacity: 0;
+  //     transform: rotate(0deg) scale(0.2, 0.2);
+  //   }
     
-    span:nth-last-child(1) {
-      transform: rotate(-45deg) translate(0, -1px);
-    }
-  }
+  //   span:nth-last-child(1) {
+  //     transform: rotate(-45deg) translate(0, -1px);
+  //   }
+  // }
 }

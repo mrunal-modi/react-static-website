@@ -15,13 +15,22 @@ What is Done?
     Form Component will render forms any form, we need to find a way to identify way to use the form data as well.
 6. Cards Component
 7. Header configuration
+8. sidebar configuration
 
 What Needs to be done?
 
 1. Footer configuration
-2. sidebar configuration
-3. Theming 
-4. Consistent common styling like padding and margin
+2. Theming 
+3. Consistent common styling like padding and margin
 
-5. Carousal Component
-6. Testimonials
+
+V2.
+1. Carousal Component
+2. Testimonials
+3. Mobile View
+
+
+Bugs:
+
+1. On Topbar active page is not highlighted.
+2. On Mobile view services are not wrapping
